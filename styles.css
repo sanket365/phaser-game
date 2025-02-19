@@ -1,0 +1,83 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000428, #004e92); /* Cool dark gradient */
+    font-family: 'Press Start 2P', cursive; /* Retro gaming font */
+    color: white;
+}
+
+/* Centering Canvas */
+canvas {
+    display: block;
+    margin: auto;
+    border: 5px solid #00ffcc; /* Neon cyan border */
+    box-shadow: 0px 0px 20px #00ffcc;
+    border-radius: 10px;
+}
+
+/* Game Over Screen */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+/* Game Over Text */
+.game-over h1 {
+    font-size: 36px;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* Buttons */
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    transition: 0.3s;
+}
+
+/* Restart Button */
+.restart-btn {
+    background: #00ff00;
+    color: black;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.restart-btn:hover {
+    background: #00cc00;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Exit Button */
+.exit-btn {
+    background: #ff0000;
+    color: white;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.exit-btn:hover {
+    background: #cc0000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* Health Bar */
+#health {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0px 0px 5px cyan;
+}

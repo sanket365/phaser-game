@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Striker</title>
+
+    <!-- Phaser Library -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font for a Retro Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Game Canvas -->
+    <div id="game-container"></div>
+
+    <!-- Game Over Screen (Initially Hidden) -->
+    <div id="game-over-screen" class="game-over" style="display: none;">
+        <h1>Game Over!</h1>
+        <button class="restart-btn" onclick="restartGame()">Restart</button>
+        <button class="exit-btn" onclick="exitGame()">Exit</button>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="main.js"></script>
+
+    <script>
+        function restartGame() {
+            location.reload(); // Reload the page to restart the game
+        }
+
+        function exitGame() {
+            window.close(); // Close the game window
+        }
+    </script>
+
+</body>
+</html>
